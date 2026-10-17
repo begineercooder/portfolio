@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gilmar de Carvalho | Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f1115;
+      --card: #171a21;
+      --line: #262b36;
+      --text: #e8eaf0;
+      --muted: #9aa3b5;
+      --accent: #2ecc71;
+      --accent2: #f05032;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+    header { padding: 24px 0; border-bottom: 1px solid var(--line); }
+    header .wrap { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+    .logo { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.1rem; }
+    .logo span { color: var(--accent); }
+    nav a { color: var(--muted); margin-left: 20px; font-size: .95rem; }
+
+    .hero { padding: 80px 0 60px; }
+    .tag { display: inline-block; font-size: .8rem; color: var(--accent); border: 1px solid var(--accent); border-radius: 99px; padding: 4px 12px; margin-bottom: 20px; }
+    h1 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(2rem, 6vw, 3.4rem); line-height: 1.1; margin-bottom: 18px; }
+    .hero p { color: var(--muted); max-width: 600px; font-size: 1.1rem; }
+    .btns { margin-top: 28px; display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn { padding: 12px 22px; border-radius: 8px; font-weight: 500; }
+    .btn-main { background: var(--accent); color: #0f1115; }
+    .btn-out { border: 1px solid var(--line); color: var(--text); }
+    .btn:hover { text-decoration: none; opacity: .9; }
+
+    section { padding: 50px 0; border-top: 1px solid var(--line); }
+    h2 { font-family: 'Space Grotesk', sans-serif; font-size: 1.6rem; margin-bottom: 24px; }
+    h2 small { color: var(--accent2); font-size: .9rem; display: block; font-weight: 500; }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 22px; display: flex; flex-direction: column; }
+    .card .type { font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+    .card h3 { font-family: 'Space Grotesk', sans-serif; margin: 6px 0 10px; }
+    .card p { color: var(--muted); font-size: .95rem; flex: 1; }
+    .card a { margin-top: 14px; font-size: .9rem; }
+
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; }
+    .skills span { background: var(--card); border: 1px solid var(--line); padding: 8px 14px; border-radius: 8px; font-size: .9rem; }
+
+    .flow { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; font-size: .9rem; }
+    .flow div { background: var(--card); border: 1px solid var(--line); padding: 10px 14px; border-radius: 8px; }
+    .flow b { color: var(--accent); }
+
+    footer { padding: 30px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; text-align: center; }
+    @media (max-width: 600px) { nav a { margin: 0 14px 0 0; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="logo">gilmar<span>.dev</span></div>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#versionamento">Versionamento</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <div class="tag">ADS · CEUB · Bootcamp I</div>
+    <h1>Gilmar de Carvalho</h1>
+    <p>Empreendedor do varejo, formado em Administração e estudante de Análise e Desenvolvimento de Sistemas. Uno a experiência de negócio com tecnologia para criar soluções para supermercados.</p>
+    <div class="btns">
+      <a class="btn btn-main" href="https://github.com/begineercooder/portfolio" target="_blank">Ver repositório</a>
+      <a class="btn btn-out" href="https://www.linkedin.com/in/gilmar-de-carvalho" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <section id="sobre">
+    <h2><small>01</small>Sobre mim</h2>
+    <p style="color:var(--muted);max-width:720px">
+      Trabalho com marketing digital, operações comerciais e compras em uma rede de supermercados familiar.
+      No curso de ADS, estou aprendendo a transformar os problemas reais do varejo em sistemas:
+      da modelagem de dados até a engenharia de software.
+    </p>
+  </section>
+
+  <section id="projetos">
+    <h2><small>02</small>Projetos</h2>
+    <div class="grid">
+      <div class="card">
+        <span class="type">Acadêmico · Engenharia de Software</span>
+        <h3>AgendAgil</h3>
+        <p>Sistema de agendamento para personal trainers que atendem em várias academias. Projeto em grupo.</p>
+        <a href="https://github.com/begineercooder/portfolio/tree/main/projetos-academicos/agendagil" target="_blank">Ver projeto →</a>
+      </div>
+      <div class="card">
+        <span class="type">Acadêmico · Banco de Dados I</span>
+        <h3>Modelagem e SQL</h3>
+        <p>Modelos de dados e scripts SQL desenvolvidos ao longo da disciplina.</p>
+        <a href="https://github.com/begineercooder/portfolio/tree/main/projetos-academicos/banco-de-dados-i" target="_blank">Ver projeto →</a>
+      </div>
+      <div class="card">
+        <span class="type">Acadêmico · Lógica de Programação</span>
+        <h3>Algoritmos</h3>
+        <p>Exercícios e algoritmos resolvidos, do básico às estruturas de repetição.</p>
+        <a href="https://github.com/begineercooder/portfolio/tree/main/projetos-academicos/logica-de-programacao" target="_blank">Ver projeto →</a>
+      </div>
+      <div class="card">
+        <span class="type">Pessoal · Produto SaaS</span>
+        <h3>CRM para Supermercados</h3>
+        <p>CRM para redes de médio porte com previsão de ruptura de estoque e apoio às compras.</p>
+        <a href="https://github.com/begineercooder/portfolio/tree/main/projetos-pessoais/crm-supermercados" target="_blank">Ver projeto →</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><small>03</small>Ferramentas</h2>
+    <div class="skills">
+      <span>Git</span><span>GitHub</span><span>GitHub Pages</span><span>HTML</span><span>CSS</span><span>SQL</span><span>Meta Ads</span>
+    </div>
+  </section>
+
+  <section id="versionamento">
+    <h2><small>04</small>Como este portfólio é versionado</h2>
+    <div class="flow">
+      <div>Working Directory</div> <b>git add →</b>
+      <div>Staging Area</div> <b>git commit →</b>
+      <div>Repositório Local</div> <b>git push →</b>
+      <div>GitHub</div>
+    </div>
+    <p style="color:var(--muted);margin-top:18px">Versão atual: <strong style="color:var(--text)">v1.1</strong></p>
+  </section>
+
+  <section id="contato">
+    <h2><small>05</small>Contato</h2>
+    <p style="color:var(--muted)">
+      📧 <a href="mailto:gilmar.carvalho@sempreceub.com.br">gilmar.carvalho@sempreceub.com.br</a><br>
+      💼 <a href="https://www.linkedin.com/in/gilmar-de-carvalho" target="_blank">linkedin.com/in/gilmar-de-carvalho</a><br>
+      🐙 <a href="https://github.com/begineercooder" target="_blank">github.com/begineercooder</a>
+    </p>
+  </section>
+
+</main>
+
+<footer>© 2026 Gilmar de Carvalho · Publicado com GitHub Pages</footer>
+
+</body>
+</html>
