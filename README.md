@@ -52,7 +52,7 @@ Este repositório segue versionamento semântico com tags do Git:
 | Versão | Descrição |
 |---|---|
 | `v1.0` | Estrutura inicial do repositório e primeira versão da página web |
-| `v1.1` | Ajustes na página e documentação dos projetos |
+| `v1.1` | Ajustes na página e atualização dos projetos |
 
 Padrão de mensagens de commit utilizado:
 
