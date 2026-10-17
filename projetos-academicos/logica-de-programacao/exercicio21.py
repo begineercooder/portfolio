@@ -1,0 +1,1 @@
+print("Lista de compras:\n\nleite",2*(3+5),"\npão\ncafé")

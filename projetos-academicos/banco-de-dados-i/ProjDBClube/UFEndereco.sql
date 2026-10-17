@@ -1,0 +1,6 @@
+CREATE TABLE UfEndereco
+(
+siglaUf CHAR (2) NOT NULL ,
+nomeUf VARCHAR (18) NOT NULL UNIQUE,
+PRIMARY KEY (siglaUf)
+);
